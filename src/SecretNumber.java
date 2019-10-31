@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class SecretNumber {
     public static void main( String [] args ) {
         Scanner guess1 = new Scanner(System.in);
-        System.out.println("Guess a number between 1 and 10.");
+        System.out.println("Guess a number between 1 and 50.");
 
         int inputNum1 = guess1.nextInt();
 
         Random randy = new Random();
-        int randomNumber = randy.nextInt(10) + 1;
+        int randomNumber = randy.nextInt(50) + 1;
         if(randomNumber == inputNum1)
         {
             System.out.println("Thats right!");
